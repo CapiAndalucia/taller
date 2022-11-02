@@ -128,6 +128,13 @@ _Al meternos en la maquina vargant, nuestro prompt habrá cambiado a algo tal qu
 
 
 
+# INTRODUCCIÓN A APACHE
+
+### ¿Qué es apache?
+
+Apache HTTP Server es un software de servidor web gratuito y de código abierto para plataformas Unix con el cual se ejecutan el 46% de los sitios web de todo el mundo.
+Por defecto, el servidor web Apache toma instrucciones para escuchar la conexión entrante y vincularse al puerto 80 del equipo
+
 
 
 ## INSTALAR APACHE2 🔩
@@ -152,6 +159,54 @@ systemctl status apache2
 
 _Ahora su nos dirigimos al navegador y escribimos **localhost:8000**, nos dirigirá a un fichero html con informacion de apache y su configuración_
 
+
+
+
+![Esta imagen no funciona](instalacionapache.png)
+
+
+Para saber si el apache esta funcionando ejecutamos la instrucción 
+
+`sudo service apache2 status`
+
+Si funciona correctamente, si buscamos en nuestro navegador `localhost:8080`
+nos debería de aparecer una web de bienvenida de apache
+
+![Esta imagen no funciona](paginadebienvenida.png)
+
+
+## Módulo cgi para poder interpretar programas
+
+
+Tenemos que activar el modulo y reiniciar apache
+
+Con sudo `a2enmod cgid` y `service apache2 restart`
+
+![Esta imagen no funciona](activarcgibin.png)
+
+
+
+Abrimos en visual estudio la carpeta compartida, y 
+creamos un nuevo fichero que se llame `first.py` 
+
+A este fichero tenemos que darle permisos de ejecución
+con `sudo chmod 775 first.py`
+
+
+
+![Esta imagen no funciona](cambiar_permisos.png)
+
+Editamos el fichero con visual estudio y escribimos los siguiente
+
+
+
+![Esta imagen no funciona](primerprograma.png)
+
+Si hemos hecho todos los pasos correctamente, buscamos en nuestro navegador 
+la sigueinte ruta `localhost:8080/cgi-bin/first.py`
+
+
+![Esta imagen no funciona](primerprogramapy.png)
 
 
 
