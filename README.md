@@ -125,7 +125,7 @@ vagrant ssh
 _Al meternos en la maquina vargant, nuestro prompt habrá cambiado a algo tal que así:_
 
 **vagrant@ubutu-focal**
-
+![alt text](https://user-images.githubusercontent.com/92437490/199449427-664b5c76-de11-46c9-ad87-7d8958467146.png)
 
 
 # INTRODUCCIÓN A APACHE
