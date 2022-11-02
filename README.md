@@ -168,21 +168,17 @@ _Para verificar si apache está iniciado en nuestra maquina virtual:_
 systemctl status apache2
 ```
 
+```
+sudo service apache2 status
+```
+
+
 _Ahora su nos dirigimos al navegador y escribimos **localhost:8000**, nos dirigirá a un fichero html con informacion de apache y su configuración_
-
-
-![Esta imagen no funciona](paginadebienvenida.png)
-
-
-
-
-Para saber si el apache esta funcionando ejecutamos la instrucción 
-
-`sudo service apache2 status`
 
 Si funciona correctamente, si buscamos en nuestro navegador `localhost:8080`
 nos debería de aparecer una web de bienvenida de apache
 
+![Esta imagen no funciona](paginadebienvenida.png)
 
 
 
