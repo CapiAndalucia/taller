@@ -2,6 +2,14 @@
 
 _En este taller aprendereís a como crear una maquina Vagrant, instalar apache en el y usar scripts de Python y Perl en él_
 
+
+## ¿Qué es vagrant?
+
+_Vagrant es una herramienta que nos ayuda a crear y manejar máquinas virtuales con un mismo entorno de trabajo. Nos permite definir los servicios a instalar así como también sus configuraciones. Está pensado para trabajar en entornos locales y lo podemos utilizar con shell scripts, Chef, Puppet o Ansible_
+
+_Sirve para ayudarnos a crear y configurar máquinas virtuales con determinadas características y componentes. No está preparado para trabajar con gran cantidad de máquinas virtuales._
+
+
 ## Ventajas y Desventajas de Vagrant
 _Veremos las principales ventajas y desventajas de usar las maquinas Vagrant_
 
