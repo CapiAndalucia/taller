@@ -44,8 +44,6 @@ _Veremos las principales ventajas y desventajas de usar las maquinas Vagrant_
 
 _Para empezar, debemos asegurarnos de tener los requisitos:_
 
-Mira **Deployment** para conocer como desplegar el proyecto.
-
 
 ### Requisitos 📋
 _Realizamos una actualización de las librerias_
