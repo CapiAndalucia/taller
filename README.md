@@ -93,7 +93,7 @@ _Dentro del archvio, nos interesan 2 lineas comentadas:_
 config.vm.network "forwarded_port", guest: 80, host: 8080
 ```
 
-_En esta linea lo que indica es que nos meteremos desde el puerto 8080_
+_En esta linea lo que indica es que nos meteremos a la maquina virtual desde el puerto 8080_
 
 ```
 config.vm.synced_folder "../carpeta-cgi", "/usr/lib/cgi-bin"
