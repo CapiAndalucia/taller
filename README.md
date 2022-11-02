@@ -93,11 +93,17 @@ _Dentro del archvio, nos interesan 2 lineas comentadas:_
 config.vm.network "forwarded_port", guest: 80, host: 8080
 ```
 
+![Esta imagen no funciona](port_config.png)
+
 _En esta linea lo que indica es que nos meteremos a la maquina virtual desde el puerto 8080_
 
 ```
 config.vm.synced_folder "../carpeta-cgi", "/usr/lib/cgi-bin"
 ```
+
+![Esta imagen no funciona](shared_folder.png)
+
+
 _Esta otra sin embargo la usamos para compartir una carpeta en común, es decir, podremos modificar los archivos de la maquina virtual
 
 
@@ -122,10 +128,13 @@ _Esperamos un poco y si queremos introducirnos dentro de la maquina vargant util
 vagrant ssh
 ```
 
+![Esta imagen no funciona](log_ssh.png)
+
 _Al meternos en la maquina vargant, nuestro prompt habrá cambiado a algo tal que así:_
 
 **vagrant@ubutu-focal**
 
+![Esta imagen no funciona](cambio_prompt_ssh.png)
 
 
 # INTRODUCCIÓN A APACHE
@@ -151,6 +160,8 @@ _A continuación instalamos el paquete:_
 sudo apt install apache2
 ```
 
+![Esta imagen no funciona](instalacionapache.png)
+
 _Para verificar si apache está iniciado en nuestra maquina virtual:_
 
 ```
@@ -160,9 +171,9 @@ systemctl status apache2
 _Ahora su nos dirigimos al navegador y escribimos **localhost:8000**, nos dirigirá a un fichero html con informacion de apache y su configuración_
 
 
+![Esta imagen no funciona](paginadebienvenida.png)
 
 
-![Esta imagen no funciona](instalacionapache.png)
 
 
 Para saber si el apache esta funcionando ejecutamos la instrucción 
@@ -172,7 +183,7 @@ Para saber si el apache esta funcionando ejecutamos la instrucción
 Si funciona correctamente, si buscamos en nuestro navegador `localhost:8080`
 nos debería de aparecer una web de bienvenida de apache
 
-![Esta imagen no funciona](paginadebienvenida.png)
+
 
 
 ## Módulo cgi para poder interpretar programas
